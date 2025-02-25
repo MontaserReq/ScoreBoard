@@ -1,0 +1,88 @@
+/* إعدادات عامة */
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background-image: url('/websitebg.svg');
+background-size: auto;
+background-position: center;
+background-repeat: repeat;
+
+}
+
+/* تصميم الـ Scoreboard */
+.scoreboard {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* تقسيم الشاشة إلى نصفين */
+.player-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* اسم اللاعب */
+.player-name {
+  font-size: 24px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  outline: none;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/* النتيجة */
+.score {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* أزرار التحكم */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  font-size: 60px;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+}
+
+.decrease {
+  background-color: #fca326; /* أحمر */
+}
+
+.increase {
+  background-color: #fca326; /* أخضر */
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.right .player-name, 
+.right .score {
+  color: hsl(213, 14%, 13%);
+}
